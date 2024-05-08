@@ -1,2 +1,0 @@
-# manusenga
-portofolio project
