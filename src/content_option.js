@@ -76,7 +76,7 @@ const services = [{
 const dataportfolio = [{
         img: "../src/assets/images/github-search-users.png",
         description: "The purpose of this project will be to authenticate and present the dashboard of a login github account.",
-        link: "#",
+        link: "https://gitsearchusers-manu.netlify.app/",
     }
 ];
 
