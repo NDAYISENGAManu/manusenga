@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as emailjs from "emailjs-com";
+// import * as emailjs from "emailjs-com";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
@@ -17,45 +17,45 @@ export const ContactUs = () => {
     variant: "",
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormdata({ loading: true });
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setFormdata({ loading: true });
 
-    const templateParams = {
-      from_name: formData.email,
-      user_name: formData.name,
-      to_name: contactConfig.YOUR_EMAIL,
-      message: formData.message,
-    };
+  //   const templateParams = {
+  //     from_name: formData.email,
+  //     user_name: formData.name,
+  //     to_name: contactConfig.YOUR_EMAIL,
+  //     message: formData.message,
+  //   };
 
-    emailjs
-      .send(
-        contactConfig.YOUR_SERVICE_ID,
-        contactConfig.YOUR_TEMPLATE_ID,
-        templateParams,
-        contactConfig.YOUR_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setFormdata({
-            loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
-            variant: "success",
-            show: true,
-          });
-        },
-        (error) => {
-          console.log(error.text);
-          setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
-            variant: "danger",
-            show: true,
-          });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
-        }
-      );
-  };
+  //   emailjs
+  //     .send(
+  //       contactConfig.YOUR_SERVICE_ID,
+  //       contactConfig.YOUR_TEMPLATE_ID,
+  //       templateParams,
+  //       contactConfig.YOUR_USER_ID
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //         setFormdata({
+  //           loading: false,
+  //           alertmessage: "SUCCESS! ,Thankyou for your messege",
+  //           variant: "success",
+  //           show: true,
+  //         });
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //         setFormdata({
+  //           alertmessage: `Faild to send!,${error.text}`,
+  //           variant: "danger",
+  //           show: true,
+  //         });
+  //         document.getElementsByClassName("co_alert")[0].scrollIntoView();
+  //       }
+  //     );
+  // };
 
   const handleChange = (e) => {
     setFormdata({
@@ -112,7 +112,7 @@ export const ContactUs = () => {
             <p>{contactConfig.description}</p>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <form onSubmit={handleSubmit} className="contact__form w-100">
+            <form className="contact__form w-100">
               <Row>
                 <Col lg="6" className="form-group">
                   <input
