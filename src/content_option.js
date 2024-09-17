@@ -1,18 +1,18 @@
 const logotext = "MANU";
 const meta = {
     title: "Emmanuel NDAYISENGA",
-    description: "I’m Emmanuel NDAYISENGA software developer,currently working in Rwanda-Kigali",
+    description: "I’m Emmanuel NDAYISENGA software engineer,currently working in Rwanda-Kigali",
 };
 
 const introdata = {
     title: "I’m Emmanuel NDAYISENGA",
     animated: {
         first: "I love coding",
-        second: "I code cool websites",
+        second: "I code cool Application",
         third: "I develop web apps",
     },
-    description: "I am a software developer with hands-on experience in all levels of web development including Analysis, design, development, testing, integration and scaling.",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "I am a software engineer with hands-on experience in all levels of web development including Analysis, design, development, testing, integration and scaling.",
+    your_img_url: "/portofolio.png",
 };
 
 const dataabout = {
