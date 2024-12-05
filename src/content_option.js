@@ -1,3 +1,6 @@
+import yeffa from "../src/assets/images/yeffa.png";
+import githubSearchUsers from "../src/assets/images/github-search-users.png";
+
 const logotext = "MANU";
 const meta = {
     title: "Emmanuel NDAYISENGA",
@@ -12,7 +15,7 @@ const introdata = {
         third: "I develop web apps",
     },
     description: "I am a software engineer with hands-on experience in all levels of web development including Analysis, design, development, testing, integration and scaling.",
-    your_img_url: "/portofolio.png",
+    your_img_url: "/Kg-4.jpeg",
 };
 
 const dataabout = {
@@ -38,23 +41,31 @@ const worktimeline = [{
 
 const skills = [{
         name: "Javascript",
-        value: 95,
+        value: 100,
     },
     {
         name: "React",
-        value: 90,
+        value: 100,
     },
     {
         name: "Typescript",
-        value: 90,
+        value: 100,
     },
     {
         name: "NextJs",
-        value: 90,
+        value: 100,
+    },
+    {
+        name: "TailwindCss",
+        value: 100,
+    },
+    {
+        name: "Scss",
+        value: 100,
     },
     {
         name: "Jquery",
-        value: 85,
+        value: 75,
     },
 ];
 
@@ -74,7 +85,12 @@ const services = [{
 
 
 const dataportfolio = [{
-        img: "../src/assets/images/github-search-users.png",
+        img: yeffa,
+        description: "This program aims to catalyze dignified and fulfilling work for young people, especially young women, and disadvantaged groups",
+        link: "https://yeffa.rw/",
+    },
+    {
+        img: githubSearchUsers,
         description: "The purpose of this project will be to authenticate and present the dashboard of a login github account.",
         link: "https://gitsearchusers-manu.netlify.app/",
     }
@@ -82,7 +98,7 @@ const dataportfolio = [{
 
 const contactConfig = {
     YOUR_EMAIL: "webmasterio2015@gmail.com",
-    YOUR_FONE: "(250)788885693",
+    YOUR_FONE: "(250)789528073",
     description: "I am a software developer with hands-on experience in all levels of web development including Analysis, design, development, testing, integration and scaling.",
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",

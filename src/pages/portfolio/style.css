@@ -1,17 +1,13 @@
 .po_items_ho {
-    column-width: 15em;
-    -moz-column-width: 15em;
-    -webkit-column-width: 15em;
-    column-gap: 4rem;
-    -moz-column-gap: 4rem;
-    -webkit-column-gap: 4rem;
+    width: full;
+    gap: 4rem;
 }
 
 .po_item {
     display: inline-block;
-    width: 100%;
+    width: 48%;
     text-align: center;
-    margin: 0.5rem auto;
+    margin: 0.5rem;
     position: relative;
     background: var(--secondary-color);
     padding: 6px;
@@ -23,6 +19,7 @@
 
 .po_item img {
     max-width: 100%;
+    height: 300px;
 }
 
 .po_item .content {
