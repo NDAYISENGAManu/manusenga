@@ -8,11 +8,11 @@ const meta = {
 };
 
 const introdata = {
-    title: "I’m Emmanuel NDAYISENGA",
+    title: "Hi, I'm Emmanuel NDAYISENGA!",
     animated: {
-        first: "I love coding",
-        second: "I code cool Application",
-        third: "I develop web apps",
+        first: "Passionate about coding.",
+        second: "Crafting innovative applications.",
+        third: "Building seamless web experiences.",
     },
     description: "I am a software engineer with hands-on experience in all levels of web development including Analysis, design, development, testing, integration and scaling.",
     your_img_url: "/Kg-4.jpeg",
