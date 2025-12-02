@@ -1,0 +1,237 @@
+.experience {
+    background: var(--dark-bg);
+}
+
+.experience-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.timeline-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.marker-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.marker-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.marker-line {
+    width: 2px;
+    flex: 1;
+    background: var(--primary-gradient);
+    opacity: 0.3;
+    margin-top: 1rem;
+    min-height: 100px;
+}
+
+.timeline-content {
+    padding: 2rem;
+    flex: 1;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.experience-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.experience-company {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.experience-period {
+    background: rgba(var(--primary-color-rgb, 17, 153, 142), 0.2);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.experience-description {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.experience-contributions {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.experience-contributions li {
+    margin-bottom: 0.5rem;
+}
+
+.experience-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-badge {
+    background: rgba(var(--secondary-color-rgb, 56, 239, 125), 0.2);
+    color: var(--text-primary);
+    padding: 0.4rem 1rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(var(--secondary-color-rgb, 56, 239, 125), 0.3);
+}
+
+@media (max-width: 992px) {
+    .experience-timeline {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+    }
+
+    .marker-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .marker-icon i {
+        font-size: 1.2rem;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience-period {
+        align-self: flex-start;
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline-item {
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .marker-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .marker-icon i {
+        font-size: 1rem;
+    }
+
+    .experience-title {
+        font-size: 1.25rem;
+    }
+
+    .timeline-content {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-timeline {
+        padding: 0 0.5rem;
+    }
+
+    .timeline-item {
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .marker-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .marker-icon i {
+        font-size: 0.9rem;
+    }
+
+    .marker-line {
+        min-height: 80px;
+    }
+
+    .timeline-content {
+        padding: 1rem;
+    }
+
+    .experience-header {
+        margin-bottom: 0.8rem;
+    }
+
+    .experience-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .experience-company {
+        font-size: 1rem;
+    }
+
+    .experience-period {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .experience-description {
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .experience-technologies {
+        gap: 0.4rem;
+    }
+
+    .tech-badge {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}

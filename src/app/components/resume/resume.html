@@ -1,0 +1,122 @@
+<div class="resume-wrapper">
+  <div class="print-controls">
+    <button class="custom-btn-primary" (click)="printResume()">
+      <i class="pi pi-download"></i>
+      <span>Download PDF</span>
+    </button>
+    <button class="custom-btn-secondary" (click)="goBack()">
+      <i class="pi pi-arrow-left"></i>
+      <span>Back to Portfolio</span>
+    </button>
+  </div>
+
+  <div id="resume-content" class="resume-container">
+    <div class="resume-sidebar">
+      <div class="profile-section">
+        <img [src]="introdata.your_img_url" alt="Profile Photo" class="profile-img" />
+        <div class="contact-details">
+          <h3>Contact</h3>
+          <div class="contact-item">
+            <i class="pi pi-envelope"></i>
+            <span>{{ contactConfig.YOUR_EMAIL }}</span>
+          </div>
+          <div class="contact-item">
+            <i class="pi pi-phone"></i>
+            <span>{{ contactConfig.YOUR_FONE }}</span>
+          </div>
+          <div class="contact-item" *ngIf="socialprofils.linkedin">
+            <i class="pi pi-linkedin"></i>
+            <span>linkedin.com/in/emmanuel-ndayisenga</span>
+          </div>
+          <div class="contact-item" *ngIf="socialprofils.github">
+            <i class="pi pi-github"></i>
+            <span>github.com/NDAYISENGAManu</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Education</h3>
+        <div *ngFor="let edu of education" class="education-item">
+          <h4>{{ edu.degree }}</h4>
+          <p class="institution">{{ edu.institution }}</p>
+          <p class="date">{{ edu.period }}</p>
+          <p *ngIf="edu.gpa" class="gpa">GPA: {{ edu.gpa }}</p>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Skills</h3>
+        <div *ngFor="let category of skillCategories" class="skill-category">
+          <h4>{{ category.name }}</h4>
+          <div class="skill-tags">
+            <span *ngFor="let skill of category.skills">{{ skill }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Certifications</h3>
+        <div *ngFor="let cert of certifications" class="cert-item">
+          <h4>{{ cert.title }}</h4>
+          <p class="issuer">{{ cert.issuer }}</p>
+          <p class="date">{{ cert.period }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-main">
+      <div class="resume-header">
+        <h1>{{ introdata.title.replace("Hi, I'm ", '') }}</h1>
+        <h2 class="job-title">{{ introdata.animated.first }}</h2>
+        <p class="summary">{{ dataabout.aboutme }}</p>
+      </div>
+
+      <div class="main-section">
+        <h3><i class="pi pi-briefcase"></i> Work Experience</h3>
+        <div class="timeline">
+          <div *ngFor="let exp of worktimeline" class="timeline-item">
+            <div class="timeline-header">
+              <div class="role-company">
+                <h4>{{ exp.jobtitle }}</h4>
+                <span class="company">{{ exp.where }}</span>
+              </div>
+              <span class="date">{{ exp.date }}</span>
+            </div>
+            <p class="description">{{ exp.description }}</p>
+            <ul *ngIf="exp.contributions && exp.contributions.length" class="contributions-list">
+              <li *ngFor="let contribution of exp.contributions">{{ contribution }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-section" *ngIf="publications && publications.length">
+        <h3><i class="pi pi-book"></i> Publications & Articles</h3>
+        <div class="publications-list">
+          <div *ngFor="let pub of publications" class="pub-item">
+            <a [href]="pub.link" target="_blank"
+              >{{ pub.title }} <i class="pi pi-external-link"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-section" *ngIf="volunteering && volunteering.length">
+        <h3><i class="pi pi-heart"></i> Volunteering</h3>
+        <div class="timeline">
+          <div *ngFor="let vol of volunteering" class="timeline-item">
+            <div class="timeline-header">
+              <div class="role-company">
+                <h4>{{ vol.role }}</h4>
+                <span class="company">{{ vol.organization }}</span>
+              </div>
+              <span class="date">{{ vol.period }}</span>
+            </div>
+            <p class="description">{{ vol.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

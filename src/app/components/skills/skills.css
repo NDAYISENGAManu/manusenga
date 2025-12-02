@@ -1,0 +1,139 @@
+.skills-section {
+    padding: 100px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.skills-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.category-card {
+    padding: 2rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill-tag {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: default;
+    color: var(--text-primary);
+}
+
+.skill-tag:hover {
+    background: var(--primary-color);
+    color: var(--dark-bg);
+    border-color: transparent;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .skills-categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .category-card {
+        padding: 1.2rem;
+    }
+
+    .category-title {
+        font-size: 1.3rem;
+    }
+
+    .skill-tag {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .category-card {
+        padding: 1rem;
+    }
+
+    .category-title {
+        font-size: 1.2rem;
+    }
+
+    .tags-container {
+        gap: 0.6rem;
+    }
+
+    .skill-tag {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,56 @@
+<section id="contact" class="contact">
+  <div class="bg-gradient-circle bg-gradient-circle-1"></div>
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      <p class="section-description">
+        Have a project in mind or want to collaborate? Feel free to reach out!
+      </p>
+    </div>
+
+    <div class="contact-content">
+      <div class="contact-info fade-in-up">
+        <div class="info-card glass-card">
+          <div class="info-icon">
+            <i class="pi pi-map-marker"></i>
+          </div>
+          <h3>Location</h3>
+          <p>Kigali, Rwanda</p>
+        </div>
+
+        <div class="info-card glass-card">
+          <div class="info-icon">
+            <i class="pi pi-envelope"></i>
+          </div>
+          <h3>Email</h3>
+          <p>webmasterio2015@gmail.com</p>
+        </div>
+
+        <div class="info-card glass-card">
+          <div class="info-icon">
+            <i class="pi pi-phone"></i>
+          </div>
+          <h3>Phone</h3>
+          <p>(250)796505224</p>
+        </div>
+      </div>
+
+      <div class="social-links fade-in-up">
+        <h3>Connect With Me</h3>
+        <div class="social-icons">
+          @for (social of socialLinks; track social.label) {
+          <a [href]="social.url" target="_blank" class="social-icon" [title]="social.label">
+            <i [class]="'pi ' + social.icon"></i>
+          </a>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 - Emmanuel NDAYISENGA</p>
+  </div>
+</footer>

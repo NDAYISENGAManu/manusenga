@@ -1,0 +1,85 @@
+<section id="home" class="hero">
+  <div class="container">
+    <div class="hero-content fade-in-up">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="gradient-text">{{ introdata.title }}</span>
+        </h1>
+        <div class="typing-container">
+          <span class="typing-text">{{ typingText }}</span><span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+          {{ introdata.description }}
+        </p>
+        <div class="hero-buttons">
+          <button
+            class="btn-gradient resume-btn"
+            (click)="downloadResume()"
+            title="Download Resume PDF"
+          >
+            <i class="pi pi-download"></i>
+            <span>&nbsp;Get My Resume</span>
+          </button>
+          <button class="btn-outline" (click)="scrollToProjects()">
+            <i class="pi pi-briefcase"></i> View Projects
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3 class="gradient-text">5+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="gradient-text">8+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="gradient-text"> +2 M</h3>
+            <p>Users</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <div class="floating-card card-1">
+            <i class="pi pi-code"></i>
+            <span>Python</span>
+          </div>
+          <div class="floating-card card-11">
+            <i class="pi pi-code"></i>
+            <span>TypeScript</span>
+          </div>
+          <div class="floating-card card-3">
+            <i class="pi pi-box"></i>
+            <span>MongoDB</span>
+          </div>
+          <div class="floating-card card-4">
+            <i class="pi pi-globe"></i>
+            <span>React</span>
+          </div>
+          <div class="floating-card card-5">
+            <i class="pi pi-cloud"></i>
+            <span>Angular</span>
+          </div>
+          <div class="floating-card card-6">
+            <i class="pi pi-server"></i>
+            <span>Node.js</span>
+          </div>
+          <div class="floating-card card-8">
+            <i class="pi pi-database"></i>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="floating-card card-2">
+            <i class="pi pi-github"></i>
+            <span>Git</span>
+          </div>
+          <div class="floating-card card-9">
+            <i class="pi pi-bolt"></i>
+            <span>Next.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-resume class="hidden-resume"></app-resume>

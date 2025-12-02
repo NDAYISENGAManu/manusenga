@@ -1,0 +1,47 @@
+<section id="experience" class="experience">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+      <p class="section-description">
+        My professional journey and the roles I've held throughout my career
+      </p>
+    </div>
+
+    <div class="experience-timeline">
+      @for (exp of experiences; track exp.title; let i = $index) {
+      <div class="timeline-item fade-in-up" [style.animation-delay]="i * 0.1 + 's'">
+        <div class="timeline-marker">
+          <div class="marker-icon">
+            <i [class]="'pi ' + exp.icon"></i>
+          </div>
+          @if (i < experiences.length - 1) {
+          <div class="marker-line"></div>
+          }
+        </div>
+        <div class="timeline-content glass-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-title">{{ exp.title }}</h3>
+              <p class="experience-company">{{ exp.company }}</p>
+            </div>
+            <span class="experience-period">{{ exp.period }}</span>
+          </div>
+          <p class="experience-description">{{ exp.description }}</p>
+          @if (exp.contributions && exp.contributions.length) {
+          <ul class="experience-contributions">
+            @for (contribution of exp.contributions; track contribution) {
+            <li>{{ contribution }}</li>
+            }
+          </ul>
+          }
+          <div class="experience-technologies">
+            @for (tech of exp.technologies; track tech) {
+            <span class="tech-badge">{{ tech }}</span>
+            }
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>

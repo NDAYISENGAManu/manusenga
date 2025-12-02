@@ -1,0 +1,19 @@
+<section id="skills" class="skills-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title gradient-text">My Skills</h2>
+      <p class="section-subtitle">Technologies & Tools I work with</p>
+    </div>
+
+    <div class="skills-categories-grid">
+      <div *ngFor="let category of getCategories()" class="category-card glass-card fade-in-up">
+        <h3 class="category-title">{{ category }}</h3>
+        <div class="tags-container">
+          <span *ngFor="let skill of getSkillsByCategory(category)" class="skill-tag">
+            {{ skill.name }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
