@@ -26,6 +26,8 @@ export class HeroComponent implements OnInit, OnDestroy {
   education = education;
   certifications = certifications;
 
+  loading = false;
+
   constructor(private cdr: ChangeDetectorRef) { }
 
   ngOnInit() {
@@ -105,10 +107,12 @@ export class HeroComponent implements OnInit, OnDestroy {
   }
 
   async downloadResume() {
+    this.loading = true;
     const element = document.querySelector('.hidden-resume #resume-content');
 
     if (!element) {
       console.error('Resume content not found');
+      this.loading = false;
       window.open('/resume', '_blank');
       return;
     }
@@ -128,6 +132,8 @@ export class HeroComponent implements OnInit, OnDestroy {
     } catch (error) {
       console.error('Error generating PDF:', error);
       window.open('/resume', '_blank');
+    } finally { 
+      this.loading = false;
     }
   }
 }

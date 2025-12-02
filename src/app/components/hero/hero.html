@@ -14,11 +14,12 @@
         <div class="hero-buttons">
           <button
             class="btn-gradient resume-btn"
+            [disabled]="loading"
             (click)="downloadResume()"
             title="Download Resume PDF"
           >
             <i class="pi pi-download"></i>
-            <span>&nbsp;Get My Resume</span>
+            <span [innerText]="loading ? ' Loading...' : ' Get My Resume'"></span>
           </button>
           <button class="btn-outline" (click)="scrollToProjects()">
             <i class="pi pi-briefcase"></i> View Projects
