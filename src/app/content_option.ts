@@ -48,12 +48,12 @@ const worktimeline = [
         date: "03/2018 - 06/2021",
         description: "Developing and maintaining web applications using modern technologies such as Angular, TypeScript, Node.js, PostgreSQL and Springboot to develop a document repository system for Rwanda's RURA, enhancing document management and accessibility."
     },
-    {
-        jobtitle: "President of AIESEC in Huye (LCVP)",
-        where: "AIESEC in Rwanda, Huye District",
-        date: "02/2016 - 02/2018",
-        description: "As the leader of AIESEC Huye, I ensured the development needed by engaging all our members, interns, and exchange participants (EPs), making sure they benefited from our projects. I introduced new strategies based on the Sustainable Development Goals (SDGs) to help our community in various ways, ultimately improving well-being as global citizens."
-    },
+    // {
+    //     jobtitle: "President of AIESEC in Huye (LCVP)",
+    //     where: "AIESEC in Rwanda, Huye District",
+    //     date: "02/2016 - 02/2018",
+    //     description: "As the leader of AIESEC Huye, I ensured the development needed by engaging all our members, interns, and exchange participants (EPs), making sure they benefited from our projects. I introduced new strategies based on the Sustainable Development Goals (SDGs) to help our community in various ways, ultimately improving well-being as global citizens."
+    // },
     {
         jobtitle: "PHP Web Developer",
         where: "PROGRAMMAGE Ltd, Kigali, Kacyiru",
