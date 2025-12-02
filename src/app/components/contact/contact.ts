@@ -15,4 +15,6 @@ export class ContactComponent {
     // { icon: 'pi-twitter', url: socialprofils.twitter, label: 'Twitter' },
     { icon: 'pi-envelope', url: `mailto:${contactConfig.YOUR_EMAIL}`, label: 'Email' }
   ];
+
+  currentYear = new Date().getFullYear();
 }
