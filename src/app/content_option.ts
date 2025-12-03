@@ -98,7 +98,7 @@ const dataportfolio = [
     {
         img: "https://i.imgur.com/s5jG9FR.jpeg",
         title: "SKS Smart kungahara system",
-        description: "A web application to manage and report Gender-Based Violence (GBV) cases efficiently.",
+        description: "A digital platform created by BK Techouse and NAEB to modernize Rwanda’s cash crop value chains.",
         link: "https://smartkungahara.rw/",
         technologies: []
     },
