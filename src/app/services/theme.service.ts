@@ -1,6 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 
-export type ThemeType = 'yellow-bg' | 'white-bg' | 'black-bg';
+export type ThemeType = 'white-bg' | 'chocolate-bg';
 
 export interface Theme {
     name: ThemeType;
@@ -21,37 +21,9 @@ export interface Theme {
     providedIn: 'root'
 })
 export class ThemeService {
-    private currentTheme = signal<ThemeType>('black-bg');
+    private currentTheme = signal<ThemeType>('white-bg');
 
     readonly themes: Record<ThemeType, Theme> = {
-        'black-bg': {
-            name: 'black-bg',
-            label: 'Black BG',
-            primaryGradient: '#FFD700',
-            secondaryGradient: '#1a1a1a',
-            accentGradient: '#FFD700',
-            primaryColor: '#FFD700',
-            secondaryColor: '#1a1a1a',
-            darkBg: '#000000',
-            cardBg: 'rgba(255, 215, 0, 0.05)',
-            textPrimary: '#FFFFFF',
-            textSecondary: '#E0E0E0',
-            borderColor: 'rgba(255, 215, 0, 0.3)'
-        },
-        'yellow-bg': {
-            name: 'yellow-bg',
-            label: 'Yellow BG',
-            primaryGradient: '#000000',
-            secondaryGradient: '#333333',
-            accentGradient: '#000000',
-            primaryColor: '#000000',
-            secondaryColor: '#333333',
-            darkBg: '#FFD700',
-            cardBg: 'rgba(0, 0, 0, 0.05)',
-            textPrimary: '#000000',
-            textSecondary: '#333333',
-            borderColor: 'rgba(0, 0, 0, 0.2)'
-        },
         'white-bg': {
             name: 'white-bg',
             label: 'White BG',
@@ -60,11 +32,25 @@ export class ThemeService {
             accentGradient: '#000000',
             primaryColor: '#000000',
             secondaryColor: '#f5f5f5',
-            darkBg: '#FFFFFF',
+            darkBg: '#FFF8E7',
             cardBg: 'rgba(0, 0, 0, 0.05)',
             textPrimary: '#000000',
             textSecondary: '#555555',
             borderColor: 'rgba(0, 0, 0, 0.1)'
+        },
+        'chocolate-bg': {
+            name: 'chocolate-bg',
+            label: 'Chocolate BG',
+            primaryGradient: '#2B1B17',
+            secondaryGradient: '#3E2723',
+            accentGradient: '#D4A373',
+            primaryColor: '#C9A05F',
+            secondaryColor: '#D4A373',
+            darkBg: '#2D1B13',
+            cardBg: 'rgba(255, 255, 255, 0.05)',
+            textPrimary: '#FFFFFF',
+            textSecondary: '#E6D5C3',
+            borderColor: 'rgba(212, 163, 115, 0.3)'
         }
     };
 
@@ -85,7 +71,7 @@ export class ThemeService {
 
     private loadTheme() {
         const savedTheme = localStorage.getItem('portfolio-theme') as ThemeType;
-        const theme = savedTheme && this.themes[savedTheme] ? savedTheme : 'black-bg';
+        const theme = savedTheme && this.themes[savedTheme] ? savedTheme : 'white-bg';
         this.setTheme(theme);
     }
 
