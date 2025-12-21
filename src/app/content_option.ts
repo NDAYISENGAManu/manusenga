@@ -1,7 +1,7 @@
 const logotext = "EMMANUEL";
 const meta = {
     title: "Emmanuel NDAYISENGA",
-    description: "Software Engineer with over 5 years of hands-on experience crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions.",
+    description: "Software Engineer with over 6 years of hands-on experience crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions.",
 };
 
 const introdata = {
@@ -10,13 +10,13 @@ const introdata = {
         first: "Software Engineer",
         second: "Full-Stack Developer",
     },
-    description: "With over 5 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions. ",
+    description: "With over 6 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions. ",
     your_img_url: "https://i.imgur.com/wFMrkju.jpeg",
 };
 
 const dataabout = {
     title: "About Me",
-    aboutme: "With over 5 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions. I speak React.js, TypeScript, and Node.js fluently, and I'm passionate about blending great design with solid engineering. I love taking projects from idea to launch, architecting, coding, optimizing, and making sure every pixel and API call works in harmony. Collaboration is my superpower, and I take pride in building software that's not just functional, but delightful—the kind that users (and developers) actually enjoy.",
+    aboutme: "With over 6 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions. I speak React.js, TypeScript, and Node.js fluently, and I'm passionate about blending great design with solid engineering. I love taking projects from idea to launch, architecting, coding, optimizing, and making sure every pixel and API call works in harmony. Collaboration is my superpower, and I take pride in building software that's not just functional, but delightful—the kind that users (and developers) actually enjoy.",
 };
 const worktimeline = [
     {
@@ -122,7 +122,7 @@ const dataportfolio = [
         description: "A web application to manage and report Gender-Based Violence (GBV) cases efficiently.",
         link: "https://humura.rw/auth/login",
         technologies: []
-    },    
+    },
     {
         img: "https://i.imgur.com/hOA8i4F.png",
         title: "BK Group SMD",
@@ -156,7 +156,7 @@ const dataportfolio = [
 const contactConfig = {
     YOUR_EMAIL: "webmasterio2015@gmail.com",
     YOUR_FONE: "(250)796505224",
-    description: "With over 5 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions.",
+    description: "With over 6 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions.",
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
     YOUR_TEMPLATE_ID: "template_id",
