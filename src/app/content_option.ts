@@ -96,6 +96,13 @@ const services = [{
 
 const dataportfolio = [
     {
+        img: "https://i.postimg.cc/QtnmqFjH/logo512.jpg",
+        title: "Manu shop",
+        description: "Discover unique handcrafted treasures that will transform your space and touch your heart.",
+        link: "https://e-shops-eta.vercel.app/",
+        technologies: []
+    },
+    {
         img: "https://i.imgur.com/s5jG9FR.jpeg",
         title: "SKS Smart kungahara system",
         description: "A digital platform created by BK Techouse and NAEB to modernize Rwanda’s cash crop value chains.",
