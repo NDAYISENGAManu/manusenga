@@ -71,7 +71,7 @@ export class ThemeService {
 
     private loadTheme() {
         const savedTheme = localStorage.getItem('portfolio-theme') as ThemeType;
-        const theme = savedTheme && this.themes[savedTheme] ? savedTheme : 'white-bg';
+        const theme = savedTheme && this.themes[savedTheme] ? savedTheme : 'chocolate-bg'; // change the default theme here
         this.setTheme(theme);
     }
 
