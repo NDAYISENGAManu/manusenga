@@ -264,6 +264,10 @@ const volunteering = [
 
 const publications = [
     {
+        title: "Web Security in the Age of AI Agents — A New Concern for Developers",
+        link: "https://www.linkedin.com/feed/update/urn:li:activity:7411285940427546624/"
+    },
+    {
         title: "Celebrating specialization in software engineering",
         link: "https://www.linkedin.com/feed/update/urn:li:activity:7263182143965581313/"
     },
