@@ -41,16 +41,16 @@ export class ThemeService {
         'chocolate-bg': {
             name: 'chocolate-bg',
             label: 'Chocolate BG',
-            primaryGradient: '#2B1B17',
-            secondaryGradient: '#3E2723',
-            accentGradient: '#D4A373',
-            primaryColor: '#C9A05F',
-            secondaryColor: '#D4A373',
-            darkBg: '#461906ff',
-            cardBg: 'rgba(255, 255, 255, 0.05)',
-            textPrimary: '#FFFFFF',
-            textSecondary: '#E6D5C3',
-            borderColor: 'rgba(212, 163, 115, 0.3)'
+            primaryGradient: '#090B0F',
+            secondaryGradient: '#141824',
+            accentGradient: '#FFD166',
+            primaryColor: '#F0C36B',
+            secondaryColor: '#FFD166',
+            darkBg: '#020617',
+            cardBg: 'rgba(255, 255, 255, 0.055)',
+            textPrimary: '#FAFBFF',
+            textSecondary: '#B3B3BD',
+            borderColor: 'rgba(255, 209, 102, 0.32)'
         }
     };
 
