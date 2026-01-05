@@ -96,10 +96,10 @@ const services = [{
 
 const dataportfolio = [
     {
-        img: "https://i.postimg.cc/QtnmqFjH/logo512.jpg",
+        img: "https://i.postimg.cc/nL2JB6Tw/download.png",
         title: "Manu shop (Dev mode)",
         description: "Discover unique handcrafted treasures that will transform your space and touch your heart.",
-        link: "https://e-shops-eta.vercel.app/",
+        link: "https://e-shop-five-alpha.vercel.app/",
         technologies: []
     },
     {
