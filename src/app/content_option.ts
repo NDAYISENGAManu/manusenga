@@ -97,7 +97,7 @@ const services = [{
 const dataportfolio = [
     {
         img: "https://i.postimg.cc/nL2JB6Tw/download.png",
-        title: "Manu shop (Dev mode)",
+        title: "Manu shop (In progress)",
         description: "Discover unique handcrafted treasures that will transform your space and touch your heart.",
         link: "https://e-shop-five-alpha.vercel.app/",
         technologies: []
