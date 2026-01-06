@@ -98,13 +98,13 @@ const dataportfolio = [
     {
         img: "https://i.postimg.cc/kGk7gZYs/bkcapital-logo-home.jpg",
         title: "BK Capital Onboarding Portal",
-        description: "Developed and enhanced a customer onboarding platform for BK Capital investment services. Fixed critical issues in Version 1 and delivered Version 2 with extended support for BRD customers holding CSD numbers to invest in shares and bonds.",
+        description: "Developed and enhanced a customer onboarding platform for BK Capital investment services.",
         link: "https://onboarding.bkcapital.rw/",
         technologies: []
     },
     {
         img: "https://i.postimg.cc/nL2JB6Tw/download.png",
-        title: "e-shop (To be sold)",
+        title: "E-shop (To be sold)",
         description: "Discover unique handcrafted treasures that will transform your space and touch your heart.",
         link: "https://e-shop-gilt-two.vercel.app/",
         technologies: []
