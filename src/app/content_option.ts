@@ -99,7 +99,7 @@ const dataportfolio = [
         img: "https://i.postimg.cc/nL2JB6Tw/download.png",
         title: "Manu shop (In progress)",
         description: "Discover unique handcrafted treasures that will transform your space and touch your heart.",
-        link: "https://e-shop-five-alpha.vercel.app/",
+        link: "https://e-shop-gilt-two.vercel.app/",
         technologies: []
     },
     {
