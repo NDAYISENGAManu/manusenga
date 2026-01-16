@@ -97,6 +97,13 @@ const services = [{
 
 const dataportfolio = [
     {
+        img: "https://i.postimg.cc/PJnCgznt/Screenshot-from-2026-01-16-09-04-16.png",
+        title: "QR Code Generator",
+        description: "A beautiful, modern QR code generator built with pure JavaScript for free unlimited QR codes",
+        link: "https://qr-code-generator-liard-ten-91.vercel.app/",
+        technologies: []
+    },
+    {
         img: "https://i.postimg.cc/kGk7gZYs/bkcapital-logo-home.jpg",
         title: "BK Capital Onboarding Portal",
         description: "Developed and enhanced a customer onboarding platform for BK Capital investment services.",
