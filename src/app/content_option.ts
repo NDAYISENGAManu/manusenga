@@ -99,7 +99,7 @@ const dataportfolio = [
     {
         img: "https://i.postimg.cc/PJnCgznt/Screenshot-from-2026-01-16-09-04-16.png",
         title: "QR Code Generator",
-        description: "A beautiful, modern QR code generator built with pure JavaScript for free unlimited QR codes",
+        description: "Generate a beautiful, modern QR code generator built with pure JavaScript and no data is sent to any server",
         link: "https://qr-code-generator-liard-ten-91.vercel.app/",
         technologies: []
     },
