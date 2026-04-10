@@ -387,6 +387,70 @@
   text-decoration: underline;
 }
 
+/* References */
+.references-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.ref-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #0284c7;
+  border-radius: 8px;
+  padding: 16px;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  transition: box-shadow 0.2s ease;
+}
+
+.ref-item:hover {
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.12);
+}
+
+.ref-item h4 {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.ref-details .role {
+  margin: 0 0 2px 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0284c7;
+}
+
+.ref-details .company {
+  margin: 0 0 10px 0;
+  font-size: 0.85rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+.ref-details .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ref-details .contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: #475569;
+}
+
+.ref-details .contact-info span i {
+  color: #0284c7;
+  font-size: 0.85rem;
+  width: 14px;
+  text-align: center;
+}
+
 /* Print Styles */
 @media print {
   @page {

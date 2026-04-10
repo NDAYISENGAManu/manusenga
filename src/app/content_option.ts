@@ -49,12 +49,6 @@ const worktimeline = [
         date: "03/2018 - 06/2021",
         description: "Developing and maintaining web applications using modern technologies such as Angular, TypeScript, Node.js, PostgreSQL and Springboot to develop a document repository system for Rwanda's RURA, enhancing document management and accessibility."
     },
-    // {
-    //     jobtitle: "President of AIESEC in Huye (LCVP)",
-    //     where: "AIESEC in Rwanda, Huye District",
-    //     date: "02/2016 - 02/2018",
-    //     description: "As the leader of AIESEC Huye, I ensured the development needed by engaging all our members, interns, and exchange participants (EPs), making sure they benefited from our projects. I introduced new strategies based on the Sustainable Development Goals (SDGs) to help our community in various ways, ultimately improving well-being as global citizens."
-    // },
     {
         jobtitle: "PHP Web Developer",
         where: "PROGRAMMAGE Ltd, Kigali, Kacyiru",
@@ -172,7 +166,6 @@ const contactConfig = {
     YOUR_EMAIL: "webmasterio2015@gmail.com",
     YOUR_FONE: "(250)796505224",
     description: "With over 6 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions.",
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
     YOUR_TEMPLATE_ID: "template_id",
     YOUR_USER_ID: "user_id",
@@ -180,9 +173,7 @@ const contactConfig = {
 
 const socialprofils = {
     github: "https://github.com/NDAYISENGAManu",
-    // facebook: "https://facebook.com",
     linkedin: "https://www.linkedin.com/in/emmanuel-ndayisenga-565409106/",
-    // twitter: "https://twitter.com/SengaManu",
 };
 
 const education = [
@@ -200,7 +191,6 @@ const education = [
         period: "02/2012 - 02/2015",
         gpa: "Upper Second Class",
         skills: ["Object-Oriented Programming", "Data Structures and Algorithms", "Database Management Systems", "Web Development", "Software Engineering", "Network Fundamentals"],
-        // documentUrl: "https://i.imgur.com/HPHKejP.png"
     },
 ];
 
@@ -292,6 +282,22 @@ const publications = [
     }
 ];
 
+const references = [
+    {
+        name: "Mr. Deogratius Stephen MASSAWE",
+        role: "Chief Executive Officer (CEO)",
+        company: "BK Techouse Ltd",
+        email: "dmassawe@bk.rw",
+        phone: "+250 787 890 808"
+    }, {
+        name: "Mr. BARAKA Patient",
+        role: "Director of software engineering (Former)",
+        company: "BK Techouse Ltd",
+        email: "pad.baraka01@gmail.com",
+        phone: "+250 788 215 324"
+    },
+];
+
 export {
     meta,
     dataabout,
@@ -307,4 +313,5 @@ export {
     certifications,
     volunteering,
     publications,
+    references,
 };

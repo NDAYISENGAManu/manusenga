@@ -95,9 +95,7 @@
         <h3><i class="pi pi-book"></i> Publications & Articles</h3>
         <div class="publications-list">
           <div *ngFor="let pub of publications" class="pub-item">
-            <a [href]="pub.link" target="_blank"
-              >{{ pub.title }} <i class="pi pi-external-link"></i
-            ></a>
+            <a [href]="pub.link" target="_blank">{{ pub.title }} <i class="pi pi-external-link"></i></a>
           </div>
         </div>
       </div>
@@ -114,6 +112,23 @@
               <span class="date">{{ vol.period }}</span>
             </div>
             <p class="description">{{ vol.description }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-section" *ngIf="references && references.length">
+        <h3><i class="pi pi-users"></i> References</h3>
+        <div class="references-grid">
+          <div *ngFor="let ref of references" class="ref-item">
+            <h4>{{ ref.name }}</h4>
+            <div class="ref-details">
+              <p class="role">{{ ref.role }}</p>
+              <p class="company">{{ ref.company }}</p>
+              <div class="contact-info">
+                <span *ngIf="ref.email"><i class="pi pi-envelope"></i> {{ ref.email }}</span>
+                <span *ngIf="ref.phone"><i class="pi pi-phone"></i> {{ ref.phone }}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

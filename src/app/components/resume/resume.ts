@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { Router } from '@angular/router';
-import { introdata, dataabout, worktimeline, skills, education, certifications, volunteering, publications, contactConfig, socialprofils } from '../../content_option';
+import { introdata, dataabout, worktimeline, skills, education, certifications, volunteering, publications, contactConfig, socialprofils, references } from '../../content_option';
 
 declare var html2pdf: any;
 
@@ -23,6 +23,7 @@ export class ResumeComponent {
   certifications = certifications;
   volunteering = volunteering;
   publications = publications;
+  references = references;
   contactConfig = contactConfig;
   socialprofils = socialprofils;
 
