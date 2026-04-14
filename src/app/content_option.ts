@@ -20,11 +20,12 @@ const dataabout = {
 };
 const worktimeline = [
     {
-        jobtitle: "Software Engineer",
+        jobtitle: "Associate Software Engineer",
         where: "Bank of Kigali (BK) Techouse Ltd, Kigali City, Rwanda",
-        date: "01/2023 - Present",
+        date: "07/2025 - Present",
         description: "At BK Techouse, I contribute to the design and development of high-impact digital platforms used across the public and private sectors.",
         contributions: [
+            "Extended BK Capital Onboarding portal for BRD customers to be able to request CSD numbers to invest in shares and bonds",
             "MAFAP Feature – SKS (Smart Nkunganire System): Contributed to the development of the MAFAP module, enabling end-to-end tracking of agricultural investment data from farmers to coffee washing stations, dry mills, and exporters.",
             "BK Capital Onboarding Portal – Developed and enhanced a customer onboarding platform for BK Capital investment services. Fixed critical issues in Version 1 and delivered Version 2 with extended support for BRD customers holding CSD numbers to invest in shares and bonds.",
             "Urubuto Pay – Motor Insurance Services: Developed the end-to-end motor insurance feature within Urubuto Pay microservices. Implemented workflows that allow users to retrieve insurance quotations before payment, complete secure insurance payments, and automatically receive insurance contracts after successful transactions.",
@@ -34,13 +35,30 @@ const worktimeline = [
         ]
     },
     {
-        jobtitle: "Associate Software Engineer",
+        jobtitle: "Front-end Software Developer ",
+        where: "Bank of Kigali (BK) Techouse Ltd, Kigali City, Rwanda",
+        date: "01/2023 - 07/2025",
+        description: "Developed and maintained web applications across BK Group subsidiaries, ensuring responsive interfaces, optimized performance, and accurate, high-quality content.",
+        contributions: [
+            "BK Group Strategic Dashboard: Designed and developed a centralized dashboard for monitoring and managing KPIs and strategic initiatives across all BK Group subsidiaries, improving data visibility for leadership teams.",
+            "Yeffa Application – AGRA Project: Independently developed the Yeffa platform, supporting youth and farmers, especially women by providing tools for accessing agricultural resources and opportunities.",
+            "BK website continuous support on changes and updates",
+            "BK Capital website continuous support on changes and updates",
+            "BKGI website continuous support on changes and updates"
+        ]
+    },
+    {
+        jobtitle: "Internship (Junior Developer)",
         where: "Bank of Kigali (BK) Techouse Ltd, Kigali City, Rwanda",
         date: "06/2021 - 12/2022",
         description: "Developed and maintained web applications across BK Group subsidiaries, ensuring responsive interfaces, optimized performance, and accurate, high-quality content.",
         contributions: [
+            "Developed and maintained web applications across BK Group subsidiaries, ensuring responsive interfaces, optimized performance, and accurate, high-quality content.",
             "Contributed to the development of the Urubuto School Management System, working on back-office loan management features and the corresponding USSD workflows.",
-            "Supported frontend development for Kiliziya Yacu, fixed communication module, improving usability and interface consistency."
+            "Supported frontend development for Kiliziya Yacu, fixed communication module, improving usability and interface consistency.",
+            "BK website continuous support on changes and updates",
+            "BK Capital website continuous support on changes and updates",
+            "BKGI website continuous support on changes and updates"
         ]
     },
     {
@@ -165,6 +183,8 @@ const dataportfolio = [
 const contactConfig = {
     YOUR_EMAIL: "webmasterio2015@gmail.com",
     YOUR_FONE: "(250)796505224",
+    NATIONALITY: "Nationality: Rwanda",
+    NATIONAL_ID: "National ID: 119948014100219",
     description: "With over 6 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions.",
     YOUR_SERVICE_ID: "service_id",
     YOUR_TEMPLATE_ID: "template_id",
@@ -284,18 +304,19 @@ const publications = [
 
 const references = [
     {
-        name: "Mr. Deogratius Stephen MASSAWE",
-        role: "Chief Executive Officer (CEO)",
-        company: "BK Techouse Ltd",
-        email: "dmassawe@bk.rw",
-        phone: "+250 787 890 808"
-    }, {
         name: "Mr. BARAKA Patient",
         role: "Director of software engineering (Former)",
         company: "BK Techouse Ltd",
         email: "pad.baraka01@gmail.com",
         phone: "+250 788 215 324"
     },
+    {
+        name: "Macumu Murinda Emmanuel",
+        role: "Financial and Administrative Officer",
+        company: "RNP-UNDP Rwanda",
+        email: "mcman261@gmail.com",
+        phone: "+250 788 649 976"
+    }
 ];
 
 export {
