@@ -20,7 +20,7 @@ const dataabout = {
 };
 const worktimeline = [
     {
-        jobtitle: "Associate Software Engineer",
+        jobtitle: "Software Engineer",
         where: "Bank of Kigali (BK) Techouse Ltd, Kigali City, Rwanda",
         date: "07/2025 - Present",
         description: "At BK Techouse, I contribute to the design and development of high-impact digital platforms used across the public and private sectors.",
