@@ -16,7 +16,7 @@ const introdata = {
 
 const dataabout = {
     title: "About Me",
-    aboutme: "With over 6 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions. I speak React.js, TypeScript, and Node.js fluently, and I'm passionate about blending great design with solid engineering. I love taking projects from idea to launch, architecting, coding, optimizing, and making sure every pixel and API call works in harmony. Collaboration is my superpower, and I take pride in building software that's not just functional, but delightful—the kind that users (and developers) actually enjoy.",
+    aboutme: "With over 7 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions. I speak React.js, TypeScript, and Node.js fluently, and I'm passionate about blending great design with solid engineering. I love taking projects from idea to launch, architecting, coding, optimizing, and making sure every pixel and API call works in harmony. Collaboration is my superpower, and I take pride in building software that's not just functional, but delightful—the kind that users (and developers) actually enjoy.",
 };
 const worktimeline = [
     {
