@@ -10,7 +10,7 @@ const introdata = {
         first: "Software Engineer",
         second: "Full-Stack Developer",
     },
-    description: "With over 6 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions. ",
+    description: "With over 7 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions. ",
     your_img_url: "https://i.imgur.com/wFMrkju.jpeg",
 };
 
