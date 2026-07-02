@@ -25,6 +25,8 @@ const worktimeline = [
         date: "07/2025 - Present",
         description: "At BK Techouse, I contribute to the design and development of high-impact digital platforms used across the public and private sectors.",
         contributions: [
+            "Developed and enhanced a USSD-based platform for SKS Smart Kungahara, providing tools for farmers to access agricultural resources and opportunities.",
+            "Developed and enhanced a digital Grant Management Information System for BK Foundation",
             "Extended BK Capital Onboarding portal for BRD customers to be able to request CSD numbers to invest in shares and bonds",
             "MAFAP Feature – SKS (Smart Nkunganire System): Contributed to the development of the MAFAP module, enabling end-to-end tracking of agricultural investment data from farmers to coffee washing stations, dry mills, and exporters.",
             "BK Capital Onboarding Portal – Developed and enhanced a customer onboarding platform for BK Capital investment services. Fixed critical issues in Version 1 and delivered Version 2 with extended support for BRD customers holding CSD numbers to invest in shares and bonds.",
@@ -109,6 +111,27 @@ const services = [{
 
 const dataportfolio = [
     {
+        img: "https://i.imgur.com/s5jG9FR.jpeg",
+        title: "SKS USSD application",
+        description: "Developed and enhanced a USSD-based platform for SKS Smart Kungahara, providing tools for farmers to access agricultural resources and opportunities.",
+        link: "https://smartkungahara.rw/",
+        technologies: []
+    },
+    {
+        img: "https://i.postimg.cc/8kfFyV50/Screenshot-from-2026-06-30-17-11-28.png",
+        title: "BK Foundation DMIS",
+        description: "Developed and enhanced a digital Grant Management Information System for BK Foundation.",
+        link: "https://www.bkfoundation.rw/",
+        technologies: []
+    },
+    {
+        img: "https://i.postimg.cc/DzRYXTJk/Screenshot-from-2026-06-30-17-03-59.png",
+        title: "Simba supermarket",
+        description: "Discover simba supermarket services and shop online for your favorite products.",
+        link: "https://www.simbasupermarket.com/",
+        technologies: []
+    },
+    {
         img: "https://i.postimg.cc/PJnCgznt/Screenshot-from-2026-01-16-09-04-16.png",
         title: "QR Code Generator",
         description: "Generate a beautiful, modern QR code generator built with pure JavaScript and no data is sent to any server",
@@ -131,7 +154,7 @@ const dataportfolio = [
     },
     {
         img: "https://i.imgur.com/s5jG9FR.jpeg",
-        title: "SKS Smart kungahara system",
+        title: "SKS Smart kungahara MIS",
         description: "A digital platform created by BK Techouse and NAEB to modernize Rwanda’s cash crop value chains.",
         link: "https://smartkungahara.rw/",
         technologies: []
