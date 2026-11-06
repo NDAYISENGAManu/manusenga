@@ -1,6 +1,6 @@
 # Modern Portfolio Website
 
-A stunning, modern portfolio website built with **Angular** and **PrimeNG** featuring a beautiful green color theme with a dynamic theme switcher.
+A stunning, modern portfolio website built with **Angular**, featuring a beautiful green color theme and a dynamic theme switcher.
 
 ## ✨ Features
 
@@ -9,7 +9,7 @@ A stunning, modern portfolio website built with **Angular** and **PrimeNG** feat
 - 📱 **Fully Responsive** - Optimized for all devices and screen sizes
 - ⚡ **Fast Performance** - Built with Angular's latest features and optimizations
 - 🎯 **Smooth Scrolling** - Seamless navigation between sections
-- 🌟 **Premium UI** - State-of-the-art design with PrimeNG components
+- 🌟 **Premium UI** - Custom components with modern styling and animations
 
 ## 🎨 Sections
 
@@ -22,7 +22,7 @@ A stunning, modern portfolio website built with **Angular** and **PrimeNG** feat
 
 ### Prerequisites
 
-- Node.js (v18 or higher)
+- Node.js 24.15.0 (the version specified in `.nvmrc`)
 - npm (v10 or higher)
 
 ### Installation
@@ -90,10 +90,9 @@ yourTheme: {
 
 ## 🛠️ Technologies Used
 
-- **Angular 21** - Modern web framework
-- **PrimeNG** - Rich UI component library
+- **Angular 22** - Modern web framework
 - **PrimeFlex** - Utility CSS framework
-- **PrimeIcons** - Icon library
+- **PrimeIcons** - Icon font
 - **TypeScript** - Type-safe development
 - **CSS3** - Modern styling with variables and animations
 
@@ -136,4 +135,4 @@ Feel free to fork this project and customize it for your own portfolio!
 
 ---
 
-**Built with ❤️ using Angular & PrimeNG**
+**Built with ❤️ using Angular**
