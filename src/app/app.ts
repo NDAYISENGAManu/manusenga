@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header';
 import { HeroComponent } from './components/hero/hero';
 import { ProjectsComponent } from './components/projects/projects';
@@ -8,12 +8,14 @@ import { ContactComponent } from './components/contact/contact';
 import { SkillsComponent } from './components/skills/skills';
 import { AboutComponent } from './components/about/about';
 import { CredentialsComponent } from './components/credentials/credentials';
+import { ResumeComponent } from './components/resume/resume';
 
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
+    ResumeComponent,
     HeaderComponent,
     HeroComponent,
     AboutComponent,
@@ -28,5 +30,10 @@ import { CredentialsComponent } from './components/credentials/credentials';
   styleUrl: './app.css'
 })
 export class App {
+  private router = inject(Router);
   title = 'my-portfolio';
+
+  get isResumeRoute(): boolean {
+    return this.router.url.startsWith('/resume');
+  }
 }

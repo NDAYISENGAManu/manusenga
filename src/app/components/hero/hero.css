@@ -342,13 +342,3 @@
         font-size: 0.85rem;
     }
 }
-
-/* Hidden Resume for PDF Generation */
-.hidden-resume {
-    position: absolute;
-    left: -9999px;
-    top: -9999px;
-    visibility: hidden;
-    height: 0;
-    overflow: hidden;
-}

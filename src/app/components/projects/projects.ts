@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { CardModule } from 'primeng/card';
-import { ButtonModule } from 'primeng/button';
-import { TagModule } from 'primeng/tag';
 import { CommonModule } from '@angular/common';
 import { dataportfolio } from '../../content_option';
 
 @Component({
   selector: 'app-projects',
-  imports: [CommonModule, CardModule, ButtonModule, TagModule],
+  imports: [CommonModule],
   templateUrl: './projects.html',
   styleUrl: './projects.css'
 })

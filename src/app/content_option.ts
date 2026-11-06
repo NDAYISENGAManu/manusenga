@@ -1,28 +1,34 @@
 const logotext = "EMMANUEL";
 const meta = {
     title: "Emmanuel NDAYISENGA",
-    description: "Software Engineer with over 6 years of hands-on experience crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions.",
+    description: "Software Engineer with over 7 years of hands-on experience crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions.",
 };
 
 const introdata = {
     title: "Hi, I'm Emmanuel NDAYISENGA",
     animated: {
-        first: "Software Engineer",
-        second: "Full-Stack Developer",
+        first: "Full-Stack Software Engineer",
+        second: "Full-Stack Software Engineer",
     },
     description: "With over 7 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions. ",
-    your_img_url: "https://i.imgur.com/wFMrkju.jpeg",
+    your_img_url: "/images/profile.jpeg",
 };
 
 const dataabout = {
     title: "About Me",
-    aboutme: "With over 7 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions. I speak React.js, TypeScript, and Node.js fluently, and I'm passionate about blending great design with solid engineering. I love taking projects from idea to launch, architecting, coding, optimizing, and making sure every pixel and API call works in harmony. Collaboration is my superpower, and I take pride in building software that's not just functional, but delightful—the kind that users (and developers) actually enjoy.",
+    aboutme: "With over 7 years of hands-on experience, I've been crafting fast, scalable, and user-friendly web applications that make a real impact from fintech platforms to education systems and public-sector solutions. I speak React.js, TypeScript, and Node.js fluently, and I'm passionate about blending great design with solid engineering. I love taking projects from idea to launch, architecting, coding, optimizing, and making sure every pixel and API call works in harmony. Collaboration is my superpower, and I take pride in building software that's not just functional, but delightful the kind that users (and developers) actually enjoy.",
 };
 const worktimeline = [
     {
-        jobtitle: "Software Engineer",
+        jobtitle: "Senior Software Engineer",
+        where: "Bank of Kigali (BK) - Rwanda",
+        date: "07/2026 - Present",
+        description: "At The Bank of Kigali, I contribute to the design and development of high-impact digital platforms used across the public and private sectors.",
+    },
+    {
+        jobtitle: "Senior Software Engineer",
         where: "Bank of Kigali (BK) Techouse Ltd, Kigali City, Rwanda",
-        date: "07/2025 - Present",
+        date: "07/2025 - 07/2026",
         description: "At BK Techouse, I contribute to the design and development of high-impact digital platforms used across the public and private sectors.",
         contributions: [
             "Developed and enhanced a USSD-based platform for SKS Smart Kungahara, providing tools for farmers to access agricultural resources and opportunities.",
@@ -50,7 +56,7 @@ const worktimeline = [
         ]
     },
     {
-        jobtitle: "Internship (Junior Developer)",
+        jobtitle: "Internship (Associate Developer)",
         where: "Bank of Kigali (BK) Techouse Ltd, Kigali City, Rwanda",
         date: "06/2021 - 12/2022",
         description: "Developed and maintained web applications across BK Group subsidiaries, ensuring responsive interfaces, optimized performance, and accurate, high-quality content.",
@@ -111,91 +117,91 @@ const services = [{
 
 const dataportfolio = [
     {
-        img: "https://i.imgur.com/s5jG9FR.jpeg",
+        img: "/images/sks.jpeg",
         title: "SKS USSD application",
         description: "Developed and enhanced a USSD-based platform for SKS Smart Kungahara, providing tools for farmers to access agricultural resources and opportunities.",
         link: "https://smartkungahara.rw/",
         technologies: []
     },
     {
-        img: "https://i.postimg.cc/8kfFyV50/Screenshot-from-2026-06-30-17-11-28.png",
+        img: "/images/bk-foundation.png",
         title: "BK Foundation DMIS",
         description: "Developed and enhanced a digital Grant Management Information System for BK Foundation.",
         link: "https://www.bkfoundation.rw/",
         technologies: []
     },
     {
-        img: "https://i.postimg.cc/DzRYXTJk/Screenshot-from-2026-06-30-17-03-59.png",
+        img: "/images/simba-supermarket.png",
         title: "Simba supermarket",
         description: "Discover simba supermarket services and shop online for your favorite products.",
         link: "https://www.simbasupermarket.com/",
         technologies: []
     },
     {
-        img: "https://i.postimg.cc/PJnCgznt/Screenshot-from-2026-01-16-09-04-16.png",
+        img: "/images/qr-code-generator.png",
         title: "QR Code Generator",
         description: "Generate a beautiful, modern QR code generator built with pure JavaScript and no data is sent to any server",
         link: "https://qr-code-generator-liard-ten-91.vercel.app/",
         technologies: []
     },
     {
-        img: "https://i.postimg.cc/kGk7gZYs/bkcapital-logo-home.jpg",
+        img: "/images/bk-capital.jpg",
         title: "BK Capital Onboarding Portal",
         description: "Developed and enhanced a customer onboarding platform for BK Capital investment services.",
         link: "https://onboarding.bkcapital.rw/",
         technologies: []
     },
     {
-        img: "https://i.postimg.cc/nL2JB6Tw/download.png",
+        img: "/images/eshop.png",
         title: "E-shop (To be sold)",
         description: "Discover unique handcrafted treasures that will transform your space and touch your heart.",
         link: "https://e-shop-gilt-two.vercel.app/",
         technologies: []
     },
     {
-        img: "https://i.imgur.com/s5jG9FR.jpeg",
+        img: "/images/sks.jpeg",
         title: "SKS Smart kungahara MIS",
         description: "A digital platform created by BK Techouse and NAEB to modernize Rwanda’s cash crop value chains.",
         link: "https://smartkungahara.rw/",
         technologies: []
     },
     {
-        img: "https://i.imgur.com/rwItNo7.jpeg",
+        img: "/images/urubuto-pay.jpeg",
         title: "Urubuto Pay",
         description: "I developed and integrate insurance services (buy and renew motor insurance) within urubuto pay microservice",
         link: "https://urubutopay.rw/",
         technologies: []
     },
     {
-        img: "https://i.imgur.com/BUJzj45.png",
+        img: "/images/gbv-management.png",
         title: "GBV Management System",
         description: "A web application to manage and report Gender-Based Violence (GBV) cases efficiently.",
         link: "https://humura.rw/auth/login",
         technologies: []
     },
     {
-        img: "https://i.imgur.com/hOA8i4F.png",
+        img: "/images/bk-group-smd.png",
         title: "BK Group SMD",
         description: "A web application for BK Group to strategically manage the group and their subsidiaries.",
         link: "https://bkgroup.rw/",
         technologies: []
     },
     {
-        img: "https://i.imgur.com/glWUzKN.png",
+        img: "/images/yeffa.png",
         title: "YEFFA",
         description: "A youth-focused platform developed in partnership with AGRA to promote agribusiness and entrepreneurship.",
         link: "https://yeffa.rw/",
         technologies: []
     },
     {
-        img: "https://i.imgur.com/QQrSV6g.jpeg",
+        img: "/images/urubuto-education.jpeg",
         title: "Urubuto Education",
         description: "A digital solution supporting students and educational stakeholders.",
         link: "https://urubuto.rw/",
         technologies: []
     },
     {
-        img: "https://i.imgur.com/wfl8kW4.jpeg",
+        img: "/images/kiliziyayacu.jpeg",
         title: "Kiliziya Yacu",
         description: "A community platform tailored for Catholic Church members to enhance digital communication and spiritual engagement.",
         link: "https://kiliziyayacu.rw/",

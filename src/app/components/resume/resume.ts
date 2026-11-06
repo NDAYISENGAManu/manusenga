@@ -1,20 +1,18 @@
-import { Component, inject } from '@angular/core';
+import { Component, ElementRef, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
 import { Router } from '@angular/router';
 import { introdata, dataabout, worktimeline, skills, education, certifications, volunteering, publications, contactConfig, socialprofils, references } from '../../content_option';
-
-declare var html2pdf: any;
 
 @Component({
   selector: 'app-resume',
   standalone: true,
-  imports: [CommonModule, ButtonModule],
+  imports: [CommonModule],
   templateUrl: './resume.html',
   styleUrl: './resume.css'
 })
 export class ResumeComponent {
   private router = inject(Router);
+  private host = inject(ElementRef<HTMLElement>);
 
   introdata = introdata;
   dataabout = dataabout;
@@ -35,8 +33,11 @@ export class ResumeComponent {
   }
 
   async printResume() {
-    const element = document.getElementById('resume-content');
-    if (!element) return;
+    const element = this.host.nativeElement.querySelector('.resume-container');
+    if (!element) {
+      console.error('Resume content not found');
+      return;
+    }
 
     const opt = {
       margin: 0,
@@ -47,9 +48,17 @@ export class ResumeComponent {
       pagebreak: { mode: ['css', 'legacy'] }
     };
 
-    // Dynamic import to avoid SSR issues if any, and ensure it loads correctly
-    const html2pdf = (await import('html2pdf.js')).default;
-    html2pdf().set(opt).from(element).save();
+    element.classList.add('pdf-export');
+    const hiddenResume = element.closest('.hidden-resume');
+    hiddenResume?.classList.add('pdf-export');
+    try {
+      const html2pdf = (await import('html2pdf.js')).default;
+      await new Promise<void>(resolve => requestAnimationFrame(() => resolve()));
+      await html2pdf().set(opt).from(element).save();
+    } finally {
+      element.classList.remove('pdf-export');
+      hiddenResume?.classList.remove('pdf-export');
+    }
   }
 
   goBack() {

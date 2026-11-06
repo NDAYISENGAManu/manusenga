@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { TimelineModule } from 'primeng/timeline';
 import { CommonModule } from '@angular/common';
 import { worktimeline } from '../../content_option';
 
 @Component({
   selector: 'app-experience',
-  imports: [CommonModule, TimelineModule],
+  imports: [CommonModule],
   templateUrl: './experience.html',
   styleUrl: './experience.css'
 })

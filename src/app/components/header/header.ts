@@ -1,8 +1,6 @@
 import { Component, inject, HostListener } from '@angular/core';
 import { ThemeService, ThemeType } from '../../services/theme.service';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
-import { ResumeComponent } from '../resume/resume';
 
 import { introdata, dataabout, worktimeline, skills, education, certifications } from '../../content_option';
 
@@ -10,7 +8,7 @@ declare var html2pdf: any;
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, ButtonModule, ResumeComponent],
+  imports: [CommonModule],
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
@@ -73,16 +71,7 @@ export class HeaderComponent {
   }
 
   async downloadResume() {
-    // Find the hidden resume component's container
-    // We look for the element with id 'resume-content' inside the app-resume component
-    // Since app-resume is in our template, we can query it.
-    // However, ResumeComponent's template has #resume-content.
-    // We need to wait for view to be ready or just query it.
-
-    // We will use a timeout to ensure any rendering is done if needed, 
-    // though it should be in the DOM since it's in the template.
-
-    const element = document.querySelector('.hidden-resume #resume-content');
+    const element = document.querySelector('.hidden-resume .resume-container');
 
     if (!element) {
       console.error('Resume content not found');
@@ -102,10 +91,18 @@ export class HeaderComponent {
 
     try {
       const html2pdf = (await import('html2pdf.js')).default;
-      html2pdf().set(opt).from(element as HTMLElement).save();
+      const resume = element as HTMLElement;
+      resume.classList.add('pdf-export');
+      const hiddenResume = resume.closest('.hidden-resume');
+      hiddenResume?.classList.add('pdf-export');
+      await new Promise<void>(resolve => requestAnimationFrame(() => resolve()));
+      await html2pdf().set(opt).from(resume).save();
     } catch (error) {
       console.error('Error generating PDF:', error);
       window.open('/resume', '_blank');
+    } finally {
+      element.classList.remove('pdf-export');
+      element.closest('.hidden-resume')?.classList.remove('pdf-export');
     }
   }
 

@@ -2,3 +2,15 @@
 main {
     position: relative;
 }
+
+.hidden-resume {
+    position: fixed;
+    top: 0;
+    left: -10000px;
+    width: 210mm;
+    visibility: hidden;
+}
+
+.hidden-resume.pdf-export {
+    visibility: visible;
+}

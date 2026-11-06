@@ -1,11 +1,8 @@
 import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { ResumeComponent } from '../resume/resume';
 import { introdata, dataabout, worktimeline, skills, education, certifications } from '../../content_option';
 
 @Component({
   selector: 'app-hero',
-  imports: [ButtonModule, ResumeComponent],
   templateUrl: './hero.html',
   styleUrl: './hero.css'
 })
@@ -108,7 +105,7 @@ export class HeroComponent implements OnInit, OnDestroy {
 
   async downloadResume() {
     this.loading = true;
-    const element = document.querySelector('.hidden-resume #resume-content');
+    const element = document.querySelector('.hidden-resume .resume-container');
 
     if (!element) {
       console.error('Resume content not found');
@@ -128,11 +125,18 @@ export class HeroComponent implements OnInit, OnDestroy {
 
     try {
       const html2pdf = (await import('html2pdf.js')).default;
-      html2pdf().set(opt).from(element as HTMLElement).save();
+      const resume = element as HTMLElement;
+      resume.classList.add('pdf-export');
+      const hiddenResume = resume.closest('.hidden-resume');
+      hiddenResume?.classList.add('pdf-export');
+      await new Promise<void>(resolve => requestAnimationFrame(() => resolve()));
+      await html2pdf().set(opt).from(resume).save();
     } catch (error) {
       console.error('Error generating PDF:', error);
       window.open('/resume', '_blank');
     } finally { 
+      element.classList.remove('pdf-export');
+      element.closest('.hidden-resume')?.classList.remove('pdf-export');
       this.loading = false;
     }
   }
