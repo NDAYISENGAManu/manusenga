@@ -62,6 +62,33 @@
     width: 100%;
 }
 
+.resume-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.45rem 0.75rem;
+    border: 0;
+    border-radius: 7px;
+    background: var(--primary-color);
+    color: var(--dark-bg);
+    font: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.resume-btn:hover {
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+}
+
+.mobile-resume-btn {
+    display: none;
+}
+
 .mobile-menu-btn {
     display: none;
     background: transparent;
@@ -118,7 +145,6 @@
 .mobile-resume-btn {
     margin-top: 0.5rem;
     width: 100%;
-    justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -126,8 +152,12 @@
         display: none;
     }
 
-    .resume-btn {
+    .header-actions > .resume-btn {
         display: none;
+    }
+
+    .mobile-resume-btn {
+        display: flex;
     }
 
     .mobile-menu-btn {

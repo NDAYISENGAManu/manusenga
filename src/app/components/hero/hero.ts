@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
-import { introdata, dataabout, worktimeline, skills, education, certifications } from '../../content_option';
+import { introdata } from '../../content_option';
 
 @Component({
   selector: 'app-hero',
@@ -15,15 +15,6 @@ export class HeroComponent implements OnInit, OnDestroy {
   private texts: string[] = [];
 
   private typingTimer: any = null;
-
-  // Resume data
-  dataabout = dataabout;
-  worktimeline = worktimeline;
-  skills = skills;
-  education = education;
-  certifications = certifications;
-
-  loading = false;
 
   constructor(private cdr: ChangeDetectorRef) { }
 
@@ -103,41 +94,4 @@ export class HeroComponent implements OnInit, OnDestroy {
     }
   }
 
-  async downloadResume() {
-    this.loading = true;
-    const element = document.querySelector('.hidden-resume .resume-container');
-
-    if (!element) {
-      console.error('Resume content not found');
-      this.loading = false;
-      window.open('/resume', '_blank');
-      return;
-    }
-
-    const opt = {
-      margin: 0,
-      filename: 'Emmanuel_NDAYISENGA_Resume.pdf',
-      image: { type: 'jpeg' as const, quality: 0.98 },
-      html2canvas: { scale: 2, useCORS: true },
-      jsPDF: { unit: 'mm' as const, format: 'a4' as const, orientation: 'portrait' as const },
-      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-    };
-
-    try {
-      const html2pdf = (await import('html2pdf.js')).default;
-      const resume = element as HTMLElement;
-      resume.classList.add('pdf-export');
-      const hiddenResume = resume.closest('.hidden-resume');
-      hiddenResume?.classList.add('pdf-export');
-      await new Promise<void>(resolve => requestAnimationFrame(() => resolve()));
-      await html2pdf().set(opt).from(resume).save();
-    } catch (error) {
-      console.error('Error generating PDF:', error);
-      window.open('/resume', '_blank');
-    } finally { 
-      element.classList.remove('pdf-export');
-      element.closest('.hidden-resume')?.classList.remove('pdf-export');
-      this.loading = false;
-    }
-  }
 }

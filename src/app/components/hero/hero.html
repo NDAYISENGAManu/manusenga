@@ -12,17 +12,8 @@
           {{ introdata.description }}
         </p>
         <div class="hero-buttons">
-          <button
-            class="btn-gradient resume-btn"
-            [disabled]="loading"
-            (click)="downloadResume()"
-            title="Download Resume PDF"
-          >
-            <i class="pi pi-download"></i>
-            <span [innerText]="loading ? ' Loading...' : ' Get My Resume'"></span>
-          </button>
           <button class="btn-outline" (click)="scrollToProjects()">
-            <i class="pi pi-briefcase"></i> View Projects
+            <i class="pi pi-briefcase"></i> Explore Projects
           </button>
         </div>
         <!-- <div class="hero-stats">

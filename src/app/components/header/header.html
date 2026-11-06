@@ -16,6 +16,11 @@
       </a>
     </nav>
     <div class="header-actions">
+      <button class="resume-btn" (click)="downloadResume()">
+        <i class="pi pi-download" aria-hidden="true"></i>
+        Get my resume
+      </button>
+
       <!-- Mobile Menu Toggle -->
       <button
         class="mobile-menu-btn"
@@ -38,5 +43,9 @@
     >
       {{ item.label }}
     </a>
+    <button class="resume-btn mobile-resume-btn" (click)="downloadResume(); mobileMenuOpen = false">
+      <i class="pi pi-download" aria-hidden="true"></i>
+      Get my resume
+    </button>
   </nav>
 </header>
