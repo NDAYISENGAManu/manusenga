@@ -1,10 +1,6 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-export type ThemeType = 'white-bg' | 'chocolate-bg';
-
-export interface Theme {
-    name: ThemeType;
-    label: string;
+interface Theme {
     primaryGradient: string;
     secondaryGradient: string;
     accentGradient: string;
@@ -17,62 +13,25 @@ export interface Theme {
     borderColor: string;
 }
 
+const BEE_HONEY_THEME: Theme = {
+    primaryGradient: '#F4B942',
+    secondaryGradient: '#FFF0C2',
+    accentGradient: '#D58A16',
+    primaryColor: '#A86408',
+    secondaryColor: '#49351F',
+    darkBg: '#FFF8E8',
+    cardBg: 'rgba(255, 255, 255, 0.78)',
+    textPrimary: '#302316',
+    textSecondary: '#695843',
+    borderColor: 'rgba(168, 100, 8, 0.24)'
+};
+
 @Injectable({
     providedIn: 'root'
 })
 export class ThemeService {
-    private currentTheme = signal<ThemeType>('white-bg');
-
-    readonly themes: Record<ThemeType, Theme> = {
-        'white-bg': {
-            name: 'white-bg',
-            label: 'White BG',
-            primaryGradient: '#000000',
-            secondaryGradient: '#f5f5f5',
-            accentGradient: '#000000',
-            primaryColor: '#000000',
-            secondaryColor: '#f5f5f5',
-            darkBg: '#fff',
-            cardBg: 'rgba(0, 0, 0, 0.05)',
-            textPrimary: '#000000',
-            textSecondary: '#555555',
-            borderColor: 'rgba(0, 0, 0, 0.1)'
-        },
-        'chocolate-bg': {
-            name: 'chocolate-bg',
-            label: 'Chocolate BG',
-            primaryGradient: '#090B0F',
-            secondaryGradient: '#141824',
-            accentGradient: '#FFD166',
-            primaryColor: '#F0C36B',
-            secondaryColor: '#FFD166',
-            darkBg: '#020617',
-            cardBg: 'rgba(255, 255, 255, 0.055)',
-            textPrimary: '#FAFBFF',
-            textSecondary: '#B3B3BD',
-            borderColor: 'rgba(255, 209, 102, 0.32)'
-        }
-    };
-
     constructor() {
-        this.loadTheme();
-    }
-
-    getCurrentTheme() {
-        return this.currentTheme();
-    }
-
-    setTheme(themeName: ThemeType) {
-        this.currentTheme.set(themeName);
-        const theme = this.themes[themeName];
-        this.applyTheme(theme);
-        localStorage.setItem('portfolio-theme', themeName);
-    }
-
-    private loadTheme() {
-        const savedTheme = localStorage.getItem('portfolio-theme') as ThemeType;
-        const theme = savedTheme && this.themes[savedTheme] ? savedTheme : 'chocolate-bg'; // change the default theme here
-        this.setTheme(theme);
+        this.applyTheme(BEE_HONEY_THEME);
     }
 
     private applyTheme(theme: Theme) {

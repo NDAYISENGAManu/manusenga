@@ -9,6 +9,7 @@ import { SkillsComponent } from './components/skills/skills';
 import { AboutComponent } from './components/about/about';
 import { CredentialsComponent } from './components/credentials/credentials';
 import { ResumeComponent } from './components/resume/resume';
+import { ThemeService } from './services/theme.service';
 
 
 @Component({
@@ -32,6 +33,10 @@ import { ResumeComponent } from './components/resume/resume';
 export class App {
   private router = inject(Router);
   title = 'my-portfolio';
+
+  constructor() {
+    inject(ThemeService);
+  }
 
   get isResumeRoute(): boolean {
     return this.router.url.startsWith('/resume');

@@ -20,13 +20,13 @@ const dataabout = {
 };
 const worktimeline = [
     {
-        jobtitle: "Senior Software Engineer",
+        jobtitle: "Software Engineer",
         where: "Bank of Kigali (BK) - Rwanda",
         date: "07/2026 - Present",
         description: "At The Bank of Kigali, I contribute to the design and development of high-impact digital platforms used across the public and private sectors.",
     },
     {
-        jobtitle: "Senior Software Engineer",
+        jobtitle: "Software Engineer",
         where: "Bank of Kigali (BK) Techouse Ltd, Kigali City, Rwanda",
         date: "07/2025 - 07/2026",
         description: "At BK Techouse, I contribute to the design and development of high-impact digital platforms used across the public and private sectors.",
@@ -43,7 +43,7 @@ const worktimeline = [
         ]
     },
     {
-        jobtitle: "Front-end Software Developer ",
+        jobtitle: "Front-end Software Engineer ",
         where: "Bank of Kigali (BK) Techouse Ltd, Kigali City, Rwanda",
         date: "01/2023 - 07/2025",
         description: "Developed and maintained web applications across BK Group subsidiaries, ensuring responsive interfaces, optimized performance, and accurate, high-quality content.",
@@ -56,7 +56,7 @@ const worktimeline = [
         ]
     },
     {
-        jobtitle: "Internship (Associate Developer)",
+        jobtitle: "Internship (Associate Software Engineer)",
         where: "Bank of Kigali (BK) Techouse Ltd, Kigali City, Rwanda",
         date: "06/2021 - 12/2022",
         description: "Developed and maintained web applications across BK Group subsidiaries, ensuring responsive interfaces, optimized performance, and accurate, high-quality content.",

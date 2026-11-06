@@ -1,5 +1,4 @@
-import { Component, inject, HostListener } from '@angular/core';
-import { ThemeService, ThemeType } from '../../services/theme.service';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { introdata, dataabout, worktimeline, skills, education, certifications } from '../../content_option';
@@ -13,7 +12,6 @@ declare var html2pdf: any;
   styleUrl: './header.css'
 })
 export class HeaderComponent {
-  themeService = inject(ThemeService);
   mobileMenuOpen = false;
 
   // Resume data
@@ -34,14 +32,6 @@ export class HeaderComponent {
     { label: 'Contact', link: '#contact' }
   ];
 
-  get availableThemes(): ThemeType[] {
-    return Object.keys(this.themeService.themes) as ThemeType[];
-  }
-
-  get currentTheme(): ThemeType {
-    return this.themeService.getCurrentTheme();
-  }
-
   scrollToSection(link: string): void {
     const element = document.querySelector(link);
     if (element) {
@@ -50,24 +40,8 @@ export class HeaderComponent {
     this.mobileMenuOpen = false; // Close mobile menu after navigation
   }
 
-  toggleThemeMenu(): void {
-    // Cycle through themes
-    const themes = this.availableThemes;
-    const currentIndex = themes.indexOf(this.currentTheme);
-    const nextIndex = (currentIndex + 1) % themes.length;
-    this.changeTheme(themes[nextIndex]);
-  }
-
   toggleMobileMenu(): void {
     this.mobileMenuOpen = !this.mobileMenuOpen;
-  }
-
-  changeTheme(theme: ThemeType): void {
-    this.themeService.setTheme(theme);
-  }
-
-  getThemeLabel(theme: ThemeType): string {
-    return this.themeService.themes[theme].label;
   }
 
   async downloadResume() {

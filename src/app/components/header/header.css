@@ -23,7 +23,6 @@
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
 }
 
 .logo h2 {
@@ -62,40 +61,6 @@
 .nav-link:hover::after {
     width: 100%;
 }
-
-/* Custom Buttons */
-.custom-btn,
-.custom-btn-icon {
-    background: transparent;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    padding: 0.5rem 1.2rem;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.95rem;
-    white-space: nowrap;
-}
-
-.custom-btn-icon {
-    padding: 0.5rem;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-}
-
-.custom-btn:hover,
-.custom-btn-icon:hover {
-    background: var(--primary-color);
-    color: var(--dark-bg);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
 
 .mobile-menu-btn {
     display: none;
@@ -169,10 +134,8 @@
         display: flex;
     }
 
-    /* Remove extra gap between the theme button and mobile toggle on phone */
     .header-actions {
-        gap: 0.5rem; /* small space between icons */
-        margin-left: auto; /* push actions to the right */
+        margin-left: auto;
         align-items: center;
     }
 
